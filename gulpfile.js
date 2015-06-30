@@ -8,7 +8,7 @@ gulp.task('default', function() {
 gulp.task('sprite', function () {
     var spriteData = gulp.src('img/sprites/*.png')
         .pipe(spritesmith({
-            imgName: 'sprite.png',
+            imgName: '../img/sprite.png',
             cssName: 'sprite.css'
         }));
     spriteData.img.pipe(gulp.dest('img'));
