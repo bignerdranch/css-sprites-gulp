@@ -1,0 +1,14 @@
+@import "sprite";
+
+@include sprites($spritesheet-sprites);
+
+button,
+header,
+div {
+    margin-bottom: 10px;
+    text-indent: -200%;
+}
+
+header {
+    @include sprite-box($banner1);
+}
