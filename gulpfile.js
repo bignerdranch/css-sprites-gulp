@@ -30,4 +30,5 @@ gulp.task('sass', function() {
 // Watch for changes to sprite images
 gulp.task('watch', function () {
     gulp.watch(['img/sprites/**/*'], ['sprite']);
+    gulp.watch(['css/**/*.scss'], ['sass']);
 });
